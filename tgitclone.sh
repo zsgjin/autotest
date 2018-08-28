@@ -42,12 +42,14 @@ buildSource() {
 local ret=${SUCCESSFUL}
 local cur_dir=${pwd}
 
-if [ ${cur_dir} != ${ROOTDIR} ]
+if [ "${cur_dir}" != "${SRCDIR}" ]
 then
-    cd ${ROOTDIR}
+    cd ${SRCDIR}
+else
+    printErr "can't find ${ROOTDIR}"
 fi
 
-echo "enter repository ${ROOTDIR}/${REPOSITORY}"
+echo "enter repository ${SRCDIR}/${REPOSITORY}"
 cd ${REPOSITORY}
 echo "enter ${MCONTROLLER} ${ROOTDIR}/${REPOSITORY}/${MCONTROLLER}"
 cd ${MCONTROLLER}
