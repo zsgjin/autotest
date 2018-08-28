@@ -13,12 +13,14 @@ REPOSITORY=Application
 MCONTROLLER=Motion_controller
 INSTALLDIR=${ROOTDIR}/${SRCDIR}/${REPOSITORY}/${MCONTROLLER}/install
 
+# target
 TARGET_ARCH=arm
 TARGET_IP=192.168.1.29
 TARGET_DIR=/home/fst/work/tproject
 TARGET_USR=fst
 TARGET_PASSWD='fst'
 
+# Local settings
 LOCAL_PWD='ubuntu'
 
 # Error
