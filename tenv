@@ -1,5 +1,6 @@
 # Environment
-ROOTDIR=/home/zsgjin/work/project/tautotest
+#ROOTDIR=/home/zsgjin/work/project/tautotest
+ROOTDIR=/home/fst/work
 
 EXAMPLESDIR=${ROOTDIR}/examples
 LIBDIR=${ROOTDIR}/lib
@@ -10,6 +11,8 @@ REPORT=report
 
 GITURL=git@git.foresight-robotics.cn:MC_System/Application.git
 REPOSITORY=Application
+WORKINGBRANCH=prototype-20180601
+REMOTE_BRANCH=origin/prototype-20180601
 MCONTROLLER=Motion_controller
 INSTALLDIR=${ROOTDIR}/${SRCDIR}/${REPOSITORY}/${MCONTROLLER}/install
 
@@ -21,7 +24,7 @@ TARGET_USR=fst
 TARGET_PASSWD='fst'
 
 # Local settings
-LOCAL_PWD='ubuntu'
+LOCAL_PWD='fst'
 
 # Error
 
