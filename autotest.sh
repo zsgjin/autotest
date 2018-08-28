@@ -29,4 +29,7 @@ mv workspace.log ${LOGDIR}
 resetSTDOUT
 
 # get source from GitLab
-
+setDirectionOfPutout ${LOGDIR}/gitclone.log
+date
+runGitclone
+resetSTDOUT
