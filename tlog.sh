@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source tenv.sh
+source tenv
 
 printInfo() {
 local info=$1

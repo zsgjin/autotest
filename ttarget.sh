@@ -1,6 +1,23 @@
 #!/bin/bash
 
-source tenv.sh
+source tenv
+
+isNetworkUp(){
+local ip_to_check=$1
+local is_up=1
+local net_status=0
+
+net_status=$(nmap ${ip_to_check} | grep 'Host is up' | wc -l)
+if [ ${net_status} -eq ${is_up} ]
+then
+    printInfo "${ip_to_chek} is up"
+    return ${SUCCESSFUL}
+else
+    printErr "${ip_to_chek} is down"
+    return ${TARGET_OFF}
+fi
+
+}
 
 runRemoteCmd() {
 local passwd=$1

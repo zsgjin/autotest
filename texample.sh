@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source tenv.sh
+source tenv
 
 touchReport() {
 local ret=${SUCCESSFUL}
