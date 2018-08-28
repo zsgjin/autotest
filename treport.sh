@@ -2,16 +2,6 @@
 
 source tenv
 
-printInfo() {
-local info=$1
-echo -e "${info}"
-}
-
-printErr() {
-local err=$1
-echo -e "\033[31mERROR: ${err}\033[0m"
-}
-
 touchReport() {
 if [ -f ${LOGDIR} ]
 then
