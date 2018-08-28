@@ -33,3 +33,9 @@ setDirectionOfPutout ${LOGDIR}/gitclone.log
 date
 runGitclone
 resetSTDOUT
+
+# build source
+setDirectionOfPutout ${LOGDIR}/buildsource.log
+date
+buildSource
+resetSTDOUT
