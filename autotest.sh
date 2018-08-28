@@ -23,6 +23,8 @@ setDirectionOfPutout workspace.log
 date
 buildWorkspace
 checkReturn $? buildWorkspace
+removeOldFiles ${LOGDIR}
+removeOldFiles ${SRCDIR}
 mv workspace.log ${LOGDIR}
 resetSTDOUT
 

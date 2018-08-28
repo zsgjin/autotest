@@ -1,7 +1,18 @@
 #!/bin/bash
 
 source tenv
-source ../tlog
+
+removeOldFiles() {
+local directory=$1
+echo ${LOCAL_PWD} | sudo -S rm ${directory}/* -rfv
+
+if [ $? -eq ${SUCCESSFUL} ]
+then
+    printInfo "clean ${directory}"
+else
+    printErr "can't clean ${directory}"
+fi
+}
 
 buildDir() {
 local ret=${SUCCESSFUL}
