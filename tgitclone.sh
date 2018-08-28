@@ -51,6 +51,14 @@ fi
 
 echo "enter repository ${SRCDIR}/${REPOSITORY}"
 cd ${REPOSITORY}
+git checkout -b ${WORKINGBRANCH} ${REMOTE_BRANCH}
+if [ $? -eq ${SUCCESSFUL} ]
+then
+    printInfo "git checkout -b ${WORKINGBRANCH} ${REMOTE_BRANCH}"
+else
+    printErr "can't checkout ${WORKINGBRANCH}"
+    return ${BUILD_F}
+fi
 echo "enter ${MCONTROLLER} ${ROOTDIR}/${REPOSITORY}/${MCONTROLLER}"
 cd ${MCONTROLLER}
 
