@@ -64,7 +64,7 @@ fi
 
 local cnt=1
 local examples=$(cat ./list)
-for example int ${examples}
+for example in ${examples}
 do
     if [ -d ${example} ]
     then
