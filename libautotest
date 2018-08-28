@@ -1,0 +1,8 @@
+#!/bin/bash
+source tenv
+source tputout.sh
+source treport.sh
+source tworkspace.sh
+source tgitclone.sh
+source ttarget.sh
+source texample.sh
