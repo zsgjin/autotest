@@ -70,7 +70,8 @@ do
     then
         cd ${example}
         local des=$(cat ./description)
-        printPatternOfReport ${cnt} ${example} "${des}"
+        printPatternOfReport ${cnt} ${EXAMPLENAME} "${des}"
+        cd ..
     else
         printInfo "********************"
         printInfo "No.$cnt"

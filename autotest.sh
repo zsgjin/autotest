@@ -39,3 +39,15 @@ setDirectionOfPutout ${LOGDIR}/buildsource.log
 date
 buildSource
 resetSTDOUT
+
+# copy program to the target
+setDirectionOfPutout ${LOGDIR}/target.log
+date
+runProgramOnTarget
+resetSTDOUT
+
+# run example and generate the report
+setDirectionOfPutout ${LOGDIR}/report
+date
+generateReport
+resetSTDOUT

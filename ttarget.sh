@@ -64,3 +64,14 @@ fi
 
 return ${ret}
 }
+
+runProgramOnTarget() {
+isNetworkUp ${TARGET_IP}
+if [ $? -eq ${SUCCESSFUL} ]
+then
+    runTarget
+else
+    printErr "Target is not alive!"
+    exit
+fi
+}

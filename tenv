@@ -1,8 +1,9 @@
 # Environment
-#ROOTDIR=/home/zsgjin/work/project/tautotest
-ROOTDIR=/home/fst/work
+ROOTDIR=/home/zsgjin/work/project/tautotest
+#ROOTDIR=/home/fst/work
 
 EXAMPLESDIR=${ROOTDIR}/examples
+EXAMPLENAME=tmain
 LIBDIR=${ROOTDIR}/lib
 LOGDIR=${ROOTDIR}/log
 SCRIPTDIR=${ROOTDIR}/script
@@ -14,11 +15,11 @@ REPOSITORY=Application
 WORKINGBRANCH=prototype-20180601
 REMOTE_BRANCH=origin/prototype-20180601
 MCONTROLLER=Motion_controller
-INSTALLDIR=${ROOTDIR}/${SRCDIR}/${REPOSITORY}/${MCONTROLLER}/install
-
+#INSTALLDIR=${ROOTDIR}/${SRCDIR}/${REPOSITORY}/${MCONTROLLER}/install
+INSTALLDIR=/home/zsgjin/work/project/autotest/script-ing/working/shyan
 # target
 TARGET_ARCH=arm
-TARGET_IP=192.168.1.29
+TARGET_IP=192.168.1.21
 TARGET_DIR=/home/fst/work/tproject
 TARGET_USR=fst
 TARGET_PASSWD='fst'
